@@ -6,7 +6,7 @@ const MainPage = () => {
   return (
     <div className="main-page">
       <HomePage />
-      {/* <AboutMe /> */}
+      <AboutMe />
       <SkillsTools />
     </div>
   );

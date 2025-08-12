@@ -5,7 +5,7 @@ const AboutMe = () => {
       <div className="aboutme-wrap">
         <img
           src={`${process.env.PUBLIC_URL}/images/aboutme-mypicture.png`}
-          className="my-picture"
+          className="my-img"
         />
         <ul className="aboutme-sentence">
           <li>
@@ -13,7 +13,7 @@ const AboutMe = () => {
           </li>
           <li>
             자바스크립트와 웹 퍼블리싱을 함께 공부하며 개발·디자인 전반의 경험을
-            쌓았고, <span>사용자 중심 설계</span>와 <span>협업의 가치</span>를
+            쌓았고, <br/><span>사용자 중심 설계</span>와 <span>협업의 가치</span>를
             실무에 녹여내고 있습니다.
           </li>
           <li>
@@ -24,7 +24,7 @@ const AboutMe = () => {
       </div>
       <img
         src={`${process.env.PUBLIC_URL}/images/aboutme.png`}
-        className="aboutme-keyword"
+        className="keyword-img"
       />
     </div>
   );
