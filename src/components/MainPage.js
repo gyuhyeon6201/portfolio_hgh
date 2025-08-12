@@ -1,6 +1,7 @@
 import HomePage from "./HomePage";
 import AboutMe from "./AboutMe";
 import SkillsTools from "./SkillsTools";
+import MainProject from "./MainProject";
 
 const MainPage = () => {
   return (
@@ -8,6 +9,7 @@ const MainPage = () => {
       <HomePage />
       <AboutMe />
       <SkillsTools />
+      <MainProject />
     </div>
   );
 };
