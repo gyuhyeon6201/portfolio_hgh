@@ -1,0 +1,31 @@
+//반응형 믹스인
+
+@mixin desktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+//폰트 컴포넌트
+@mixin font-style($size, $line-height: normal, $weight) {
+  font-family: "Paperlogy", sans-serif;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+//버튼 컴포넌트
+@mixin btn-style($bg, $font, $padding) {
+  background-color: $bg;
+  color: $font;
+  padding: $padding;
+  outline: none;
+  border: 1px solid $font;
+  border-radius: 50px;
+  transition: background-color 0.25s;
+  &:hover {
+    background-color: $font;
+    color: $bg;
+    border: 1px solid $bg;
+  }
+}
