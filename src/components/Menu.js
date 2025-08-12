@@ -31,7 +31,8 @@ const Menu = ({ menuOpen, closeMenu }) => {
                   }}
                 >
                   <span>{menuItem.title}</span>
-                  <span>{isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+                  {/* <span>{isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</span> */}
+                  <span>{isOpen ? " ▲" : " ▼"}</span>
                 </div>
                 {menuItem.subMenu && (
                   <ul className={isOpen ? "open" : "close"}>
