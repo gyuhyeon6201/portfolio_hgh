@@ -1,0 +1,78 @@
+.header {
+  width: 924px;
+  height: 50px;
+  margin: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // 어느 페이지에서도 상단 위 고정
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  .home-icon,
+  .menu-icon {
+    // 아이콘 사이즈 변경 방법 3가지
+    // width: 50px;
+    // height: 50px;
+    font-size: 50px;
+    color: $color-font;
+    cursor: pointer;
+  }
+  .menu-close-icon {
+    font-size: 50px;
+    color: $color-bg;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+}
+
+// 메뉴창
+.side-menu {
+  width: 710px;
+  height: 100vh;
+  position: absolute;
+  top: -40px;
+  right: -800px;
+  background-color: $color-font;
+  border: 20px solid #555555;
+  border-radius: 0 50px 50px 0;
+  transition: right 0.5s ease;
+  opacity: 0;
+  z-index: 101;
+}
+.side-menu.menuOpen {
+  opacity: 1;
+  right: -50px;
+}
+
+// 메뉴창 내용 위치
+.side-menu >div{
+  margin: 150px 50px 0;
+}
+
+// 메뉴 타이들
+.menu-title{
+  @include font-style(60px, normal, 700);
+  cursor: pointer;
+}
+
+// 서브메뉴
+.sub-menu{
+  @include font-style(30px, normal, 500);
+  list-style: disc;
+  margin-left: 40px;
+}
+
+// 서브메뉴 펼침 효과
+.side-menu ul ul.close{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.side-menu ul ul.open{
+  max-height: 500px;
+}

@@ -1,0 +1,25 @@
+.title{
+  @include font-style(100px, normal, 800);
+  color: $color-font;
+  padding: 10px;
+  text-align: left;
+  margin-top: 260px;
+  margin-left: 80px;
+}
+
+// .aboutme-wrap{
+//   width: 904px;
+//   display: flex;
+//   align-items: center;
+//   gap: 30px;
+//   .aboutme-sentence{
+//     text-align: left;
+//     >li{
+//       margin-top: ;
+//     }
+//   }
+// }
+
+.aboutme-keyword{
+  margin-top: 54px;
+}

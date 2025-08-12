@@ -1,0 +1,30 @@
+.home-page{
+  width: 1024px;
+  margin-top: 90px;
+  text-align: center;
+  >img{
+    margin-top: 25px;
+
+  }
+}
+
+.homepage-sentence{
+  @include font-style(50px, normal, 700);
+  text-align: right;
+  margin-top: 130px;
+  margin-right: 50px;
+}
+.design{
+  color: $point-design;
+}
+.coding{
+  color: $point-coding;
+}
+
+.homepage-main-sentence{
+  @include font-style(60px, normal, 500);
+  margin-top: 80px;
+}
+.my-name{
+  @include font-style(100px, normal, 700);
+}

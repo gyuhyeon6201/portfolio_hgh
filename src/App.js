@@ -1,12 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import "./app.scss";
 import Header from "./components/Header";
-import HomePage from "./components/HomePage";
+import MainPage from "./components/MainPage";
+
 
 const App = () => {
+
   return (
     <div id="app">
       <Header />
       <main>
-        <HomePage />
+        <Routes>
+          <Route path="/" element={<MainPage />}></Route>
+        </Routes>
       </main>
     </div>
   );
