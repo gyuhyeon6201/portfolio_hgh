@@ -20,14 +20,28 @@
     font-size: 50px;
     color: $color-font;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.5);
+      background-color: $color-font;
+      border-radius: 50%;
+      color: $color-bg;
+    }
   }
   .menu-close-icon {
     font-size: 50px;
     color: $color-bg;
-    cursor: pointer;
     position: absolute;
     top: 20px;
     right: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.5);
+      background-color: $color-font;
+      border-radius: 50%;
+      color: $color-bg;
+    }
   }
 }
 
@@ -53,19 +67,19 @@
 }
 
 // 메뉴창 내용 위치
-.side-menu >div{
+.side-menu > div {
   margin: 50px;
 }
 
 // 메뉴 타이들
-.menu-title{
+.menu-title {
   @include font-style(60px, normal, 700);
   cursor: pointer;
   padding: 30px 0;
 }
 
 // 서브메뉴
-.sub-menu{
+.sub-menu {
   @include font-style(30px, normal, 500);
   list-style: disc;
   margin-left: 40px;
@@ -73,11 +87,11 @@
 }
 
 // 서브메뉴 펼침 효과
-.side-menu ul ul.close{
+.side-menu ul ul.close {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
-.side-menu ul ul.open{
+.side-menu ul ul.open {
   max-height: 500px;
 }
