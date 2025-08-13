@@ -1,0 +1,23 @@
+.publishing-top-wrap {
+  width: 964px;
+  padding: 20px 0 30px;
+  margin: 80px auto 0;
+  background-color: $color-font;
+  color: $color-bg;
+  border-radius: 10px;
+}
+.publishing-top {
+  padding: 10px 20px;
+  margin: 0 20px; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  > h2 {
+    flex: 1;
+    @include font-style(80px, normal, 700);
+  }
+  > p {
+    flex: 9;
+    @include font-style(45px, normal, 500);
+  }
+}

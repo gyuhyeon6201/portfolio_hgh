@@ -1,6 +1,5 @@
 .title {
   @include font-style(100px, normal, 800);
-  color: $color-font;
   padding: 10px;
   text-align: left;
   margin-top: 200px;
@@ -18,13 +17,12 @@
 .aboutme-sentence {
   @include font-style(30px, 40px, 300);
   text-align: left;
-  word-break: keep-all;
   display: flex;
   flex-direction: column;
   gap: 30px;
   > li {
     list-style: disc;
-    margin-left: 30px;
+    margin-left: 50px;
     > span{
       @include font-style(30px, 40px, 700);
     }

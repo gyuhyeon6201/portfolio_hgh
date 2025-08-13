@@ -4,17 +4,20 @@ html,
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #eeeeee;
+  background-color: $color-font;
 }
 
 #app {
-  width: 1024px;
+  max-width: 1024px;
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
-  background-color: #1e1e1e;
-  color: #eeeeee;
+  word-break: keep-all;
+  background-color: $color-bg;
+  color: $color-font;
   border-radius: 50px;
   // 바로 아래 자식의 margin 값이 #app에 영향을 주는 것을 막음
   overflow: hidden;
+  @include desktop{
+  }
 }

@@ -54,14 +54,14 @@
 
 // 메뉴창 내용 위치
 .side-menu >div{
-  margin: 150px 50px 0;
+  margin: 50px;
 }
 
 // 메뉴 타이들
 .menu-title{
   @include font-style(60px, normal, 700);
   cursor: pointer;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 // 서브메뉴

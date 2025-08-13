@@ -3,7 +3,7 @@
 }
 .main-wrap {
   width: 864px;
-  margin: 80px auto 130px;
+  margin: 80px auto 100px;
   @include font-style(35px, normal, 500);
   display: flex;
   flex-direction: column;
@@ -23,12 +23,21 @@
   color: $color-bg;
 }
 .main-subwrap {
-  padding: 30px;
+  padding: 20px 30px;
   background-color: $color-bg;
+  border: 1px solid $color-bg;
   display: flex;
   justify-content: space-between;
   border-radius: 50px;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-font;
+    color: $color-bg;
+    border: 1px solid $color-bg;
+  }
 }
 .guide {
   @include font-style(30px, normal, 400);
+  margin: 0 40px;
+  text-align: left;
 }

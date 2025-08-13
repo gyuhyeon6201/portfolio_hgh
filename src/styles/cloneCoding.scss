@@ -1,0 +1,54 @@
+.clone-coding{
+  margin-bottom: 30px;
+}
+
+.clone-coding-wrap{
+  width: 912px;
+  margin: 80px auto 130px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.clone-wrap {
+  padding: 20px 20px 30px;
+  background-color: $color-font;
+  color: $color-bg;
+  border-radius: 10px;
+  >img{
+    margin: 20px 0;
+  }
+}
+.clone-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  > h2 {
+    flex: 1;
+    @include font-style(80px, normal, 700);
+  }
+  >p{
+    flex: 2;
+    @include font-style(45px, normal, 500);
+  }
+}
+.clone-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    > button {
+      @include font-style(40px, normal, 600);
+      padding: 20px 30px;
+      background-color: $color-bg;
+      color: $color-font;
+      border: 3px solid $color-font;
+      border-radius: 50px;
+      text-decoration: underline;
+      &:hover {
+        background-color: $color-font;
+        color: $color-bg;
+        border: 3px solid $color-bg;
+      }
+    }
+}

@@ -1,0 +1,53 @@
+.sub-title {
+  @include font-style(50px, normal, 700);
+  text-align: right;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+
+.link-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  > button {
+    @include font-style(45px, normal, 600);
+    padding: 20px 30px;
+    background-color: $color-bg;
+    color: $color-font;
+    border: 3px solid $color-font;
+    border-radius: 50px;
+    text-decoration: underline;
+    &:hover {
+      background-color: $color-font;
+      color: $color-bg;
+      border: 3px solid $color-bg;
+    }
+  }
+}
+
+.detail-wrap {
+  width: 964px;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: $color-font;
+  color: $color-bg;
+  border-radius: 10px;
+  @include font-style(30px, 45px, 400);
+  text-align: left;
+  > p > span {
+    @include font-style(30px, 45px, 700);
+  }
+}
+.detail {
+  ul > li {
+    list-style: disc;
+    margin-left: 50px;
+  }
+  .indent {
+    margin-left: 100px;
+  }
+}

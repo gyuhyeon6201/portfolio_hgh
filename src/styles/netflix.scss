@@ -1,0 +1,21 @@
+.clone {
+  margin-top: 200px;
+}
+
+.clone-title-wrap {
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 60px;
+  gap: 20px
+}
+.number {
+  @include font-style(100px, normal, 800);
+  margin-right: 10px;
+}
+.clone-title {
+  @include font-style(70px, normal, 800);
+}
+.clone-subtitle {
+  @include font-style(30px, normal, 800);
+  text-align: left;
+}

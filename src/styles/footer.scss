@@ -1,0 +1,49 @@
+.footer {
+  margin: 200px 80px;
+}
+.footer-title {
+  @include font-style(90px, normal, 800);
+  padding: 10px;
+  text-align: left;
+}
+.footer-sentence {
+  margin: 230px 0 170px;
+  @include font-style(60px, normal, 500);
+  text-align: left;
+}
+.design {
+  color: $point-design;
+}
+.coding {
+  color: $point-coding;
+}
+
+.my-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include font-style(40px, normal, 500);
+  > div,
+  > button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  > button {
+    @include font-style(40px, normal, 500);
+    padding: 10px 20px;
+    align-self: flex-start;
+    background-color: $color-bg;
+    color: $color-font;
+    border: 1px solid $color-font;
+    border-radius: 50px;
+    &:hover {
+      background-color: $color-font;
+      color: $color-bg;
+      border: 3px solid $color-bg;
+    }
+  }
+  .person-icon {
+    border-radius: 50%;
+  }
+}
