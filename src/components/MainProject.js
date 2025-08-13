@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const MainProject = () => {
+  const navigate = useNavigate();
   return (
     <div className="main-project">
       <h1 className="title">
@@ -8,7 +11,10 @@ const MainProject = () => {
       <div className="main-wrap">
         <div className="main-team">
           <p className="main-subtitle">팀 프로젝트</p>
-          <div className="main-subwrap">
+          <div
+            className="main-subwrap"
+            onClick={() => handleNavigate("/puppyparty")}
+          >
             <p>쇼핑몰 프로젝트</p>
             <p>Puppy Party!</p>
           </div>

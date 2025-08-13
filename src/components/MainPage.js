@@ -3,20 +3,17 @@ import AboutMe from "./AboutMe";
 import SkillsTools from "./SkillsTools";
 import MainProject from "./MainProject";
 import Index from "./Index";
-import PuppyParty from "./PuppyParty";
-import TowerPick from "./TowerPick";
-import WordGame from "./WordGame";
-import Greenvia from "./Greenvia";
-import FigmaPlan from "./FigmaPlan";
 import CloneCoding from "./CloneCoding";
-import Netfilx from "./Netfilx";
+import Netflix from "./Netflix";
 import MyDay from "./MyDay";
 import Airbnb from "./Airbnb";
 import Tesla from "./Tesla";
 import Publishing from "./Publishing";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="main-page">
       <HomePage />
@@ -24,13 +21,13 @@ const MainPage = () => {
       <SkillsTools />
       <Index />
       <MainProject />
-      <PuppyParty />
+      {/* <PuppyParty />
       <TowerPick />
       <WordGame />
       <Greenvia />
-      <FigmaPlan />
+      <FigmaPlan /> */}
       <CloneCoding />
-      <Netfilx />
+      <Netflix />
       <MyDay />
       <Airbnb />
       <Tesla />

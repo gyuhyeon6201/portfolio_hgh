@@ -1,11 +1,13 @@
-const Netfilx = () => {
+
+
+const Netflix = () => {
   return (
     <div className="clone">
       <div className="clone-title-wrap">
         <h2 className="number">01</h2>
         <div>
           <p className="clone-title">넷플릭스</p>
-          <p className="clone-subtitle">(NETFILX)</p>
+          <p className="clone-subtitle">(NETFLIX)</p>
         </div>
       </div>
       <div>
@@ -62,4 +64,4 @@ const Netfilx = () => {
   );
 };
 
-export default Netfilx;
+export default Netflix;
