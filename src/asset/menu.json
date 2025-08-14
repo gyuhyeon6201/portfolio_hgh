@@ -3,38 +3,38 @@
     "id": 1,
     "title": "ABOUT ME",
     "subMenu": [
-      "skills&tools"
+      { "name": "skills&tools", "path": "/skillstools" }
     ]
   },
   {
     "id": 2,
     "title": "MAIN-PROJECT",
     "subMenu": [
-      "쇼핑몰 프로젝트",
-      "주차장 관리 프로젝트",
-      "끝말잇기 게임",
-      "블로그 웹페이지",
-      "Figma 기획안"
+      { "name": "쇼핑몰 프로젝트", "path": "/puppyparty" },
+      { "name": "주차장 관리 프로젝트", "path": "/towerpick" },
+      { "name": "끝말잇기 게임", "path": "/wordgame" },
+      { "name": "블로그 웹페이지", "path": "/greenvia" },
+      { "name": "Figma 기획안", "path": "/figmaplan" }
     ]
   },
   {
     "id": 3,
     "title": "CLONE-CODING",
     "subMenu": [
-      "넷플릭스",
-      "모멘텀",
-      "에어비앤비",
-      "테슬라"
+      { "name": "넷플릭스", "path": "/netflix" },
+      { "name": "모멘텀", "path": "/myday" },
+      { "name": "에어비앤비", "path": "/airbnb" },
+      { "name": "테슬라", "path": "/tesla" }
     ]
   },
   {
     "id": 4,
     "title": "PUBLISHING",
     "subMenu": [
-      "북스토어 상세페이지",
-      "갤러리",
-      "그리드 상세페이지",
-      "이미지 캐러셀"
+      { "name": "북스토어 상세페이지", "path": "/bookstore" },
+      { "name": "갤러리", "path": "/gallery" },
+      { "name": "그리드 상세페이지", "path": "/grid" },
+      { "name": "이미지 캐러셀", "path": "/imgcarousel" }
     ]
   }
 ]

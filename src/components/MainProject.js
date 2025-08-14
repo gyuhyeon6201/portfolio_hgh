@@ -13,27 +13,31 @@ const MainProject = () => {
           <p className="main-subtitle">팀 프로젝트</p>
           <div
             className="main-subwrap"
-            onClick={() => handleNavigate("/puppyparty")}
+            onClick={() => navigate("/puppyparty")}
           >
             <p>쇼핑몰 프로젝트</p>
             <p>Puppy Party!</p>
           </div>
-          <div className="main-subwrap">
+          <div className="main-subwrap"
+            onClick={() => navigate("/towerpick")}>
             <p>주차장 관리 프로젝트</p>
             <p>Tower Pick</p>
           </div>
         </div>
         <div className="main-team">
           <p className="main-subtitle">개인 프로젝트</p>
-          <div className="main-subwrap">
+          <div className="main-subwrap"
+            onClick={() => navigate("/wordgame")}>
             <p>끝말잇기 게임</p>
             <p>말의 끝, 너의 시작</p>
           </div>
-          <div className="main-subwrap">
+          <div className="main-subwrap"
+            onClick={() => navigate("/greenvia")}>
             <p>블로그형 웹페이지</p>
             <p>Greenvia</p>
           </div>
-          <div className="main-subwrap">
+          <div className="main-subwrap"
+            onClick={() => navigate("/figmaplan")}>
             <p>Figma 기획안</p>
             <p>혼잡도 마스터</p>
           </div>

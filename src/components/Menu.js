@@ -3,8 +3,10 @@ import menuData from "../asset/menu.json";
 import { IoCloseCircle } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Menu = ({ menuOpen, closeMenu }) => {
+  const navigate = useNavigate();
   // 열린 서브메뉴 인덱스 관리
   const [openIdx, setOpenIdx] = useState(null);
 
@@ -38,8 +40,15 @@ const Menu = ({ menuOpen, closeMenu }) => {
                   <ul className={isOpen ? "open" : "close"}>
                     {menuItem.subMenu.map((sub, subIdx) => {
                       return (
-                        <li key={subIdx} className="sub-menu">
-                          {sub}
+                        <li
+                          key={subIdx}
+                          className="sub-menu"
+                          onClick={() => {
+                            navigate(sub.path);
+                            closeMenu();
+                          }}
+                        >
+                          {sub.name}
                         </li>
                       );
                     })}
