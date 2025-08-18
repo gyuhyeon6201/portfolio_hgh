@@ -1,6 +1,6 @@
 const Grid = () => {
   return (
-    <div className="publishing-wrap">
+    <div className="grid">
       <div className="publishing-top-wrap">
         <div className="publishing-top">
           <h2>03</h2>

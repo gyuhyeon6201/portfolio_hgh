@@ -38,7 +38,8 @@
   border-radius: 10px;
   @include font-style(30px, 45px, 400);
   text-align: left;
-  > p > span {
+  > p > span,
+  .detail > ul > li > span {
     @include font-style(30px, 45px, 700);
   }
 }
@@ -49,5 +50,12 @@
   }
   .indent {
     margin-left: 100px;
+  }
+}
+
+.detail-overview {
+  margin-bottom: 130px;
+  > p {
+    margin-top: 80px;
   }
 }

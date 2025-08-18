@@ -1,16 +1,19 @@
+import { useNavigate } from "react-router-dom";
+
 const TowerPick = () => {
+  const navigate = useNavigate();
   return (
     <div className="details">
       <h1 className="title">Tower Pick</h1>
-      <p className="sub-title">주차장 관리 프로젝트</p>
+      <h3 className="sub-title">주차장 관리 프로젝트</h3>
       <div>
         <img
           src={`${process.env.PUBLIC_URL}/images/main_project/towerpick.png`}
         />
         <div className="link-btn">
-          <button onClick={()=>window.open("", "_blank", "noopener,noreferrer")}>OVERVIEW</button>
+          <button onClick={() => navigate("/towerpick-overview")}>OVERVIEW</button>
           <button onClick={()=>window.open("https://github.com/gyuhyeon6201/towerpick_v_fin", "_blank", "noopener,noreferrer")}>GITHUB </button>
-          <button onClick={()=>window.open("", "_blank", "noopener,noreferrer")}>SITE </button>
+          <button onClick={()=>window.open("https://gyuhyeon6201.github.io/towerpick_v_fin/", "_blank", "noopener,noreferrer")}>SITE </button>
         </div>
         <div className="detail-wrap">
           <p>

@@ -1,14 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 const WordGame = () => {
+  const navigate = useNavigate();
   return(
     <div className="details">
       <h1 className="title">말의 끝, 너의 시작</h1>
-      <p className="sub-title">끝말잇기 게임</p>
+      <h3 className="sub-title">끝말잇기 게임</h3>
       <div>
         <img
           src={`${process.env.PUBLIC_URL}/images/main_project/wordgame.png`}
         />
         <div className="link-btn">
-          <button onClick={()=>window.open("", "_blank", "noopener,noreferrer")}>OVERVIEW</button>
+          <button onClick={() => navigate("/wordgame-overview")}>OVERVIEW</button>
           <button onClick={()=>window.open("https://github.com/gyuhyeon6201/endword", "_blank", "noopener,noreferrer")}>GITHUB </button>
           <button onClick={()=>window.open("https://gyuhyeon6201.github.io/endword/", "_blank", "noopener,noreferrer")}>SITE </button>
         </div>

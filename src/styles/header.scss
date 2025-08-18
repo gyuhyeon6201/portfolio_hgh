@@ -68,7 +68,7 @@
 
 // 메뉴창 내용 위치
 .side-menu > div {
-  margin: 50px;
+  margin: 100px 50px;
 }
 
 // 메뉴 타이들
@@ -84,6 +84,11 @@
   list-style: disc;
   margin-left: 40px;
   margin-top: 20px;
+  transition: 0.5s;
+  transform-origin: left center;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 // 서브메뉴 펼침 효과

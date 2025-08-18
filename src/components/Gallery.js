@@ -1,6 +1,6 @@
 const Gallery = () => {
   return (
-    <div className="publishing-wrap">
+    <div className="gallery">
       <div className="publishing-top-wrap">
         <div className="publishing-top">
           <h2>02</h2>

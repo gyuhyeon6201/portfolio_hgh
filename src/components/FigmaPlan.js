@@ -1,16 +1,17 @@
-
+import { useNavigate } from "react-router-dom";
 
 const FigmaPlan = () => {
+  const navigate = useNavigate();
   return (
     <div className="details">
       <h1 className="title">혼잡도 마스터</h1>
-      <p className="sub-title">Figma 기획안</p>
+      <h3 className="sub-title">Figma 기획안</h3>
       <div>
         <img
           src={`${process.env.PUBLIC_URL}/images/main_project/figmaplan.png`}
         />
         <div className="link-btn">
-          <button onClick={()=>window.open("", "_blank", "noopener,noreferrer")}>OVERVIEW</button>
+          <button onClick={() => navigate("/figmaplan-overview")}>OVERVIEW</button>
           <button onClick={()=>window.open("https://www.figma.com/design/Cx6lQkC19dwZVmnTiw8tlL/UI-UX%EB%94%94%EC%9E%90%EC%9D%B8?node-id=5-8&t=Hs1vCWTthpD9q7wn-0", "_blank", "noopener,noreferrer")}>Fimga </button>
         </div>
         <div className="detail-wrap">

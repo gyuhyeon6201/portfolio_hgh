@@ -1,6 +1,6 @@
 const BookStore = () => {
   return (
-    <div className="publishing-wrap">
+    <div className="bookstore">
       <div className="publishing-top-wrap">
         <div className="publishing-top">
           <h2>01</h2>

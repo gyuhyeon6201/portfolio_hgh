@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const CloneCoding = () => {
+  const navigate = useNavigate();
   return (
     <div className="clone-coding">
       <h1 className="title">CLONE CODING PROJECTS</h1>
@@ -14,27 +17,37 @@ const CloneCoding = () => {
           />
           <div className="clone-btn">
             <button
-              onClick={() =>
-                window.open(
-                  "https://github.com/gyuhyeon6201/netflix",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
+              className="clone-overview-btn"
+              onClick={() => navigate("/netflix")}
             >
-              GITHUB
+              OVERVIEW
             </button>
-            <button
-              onClick={() =>
-                window.open(
-                  "https://gyuhyeon6201.github.io/netflix/",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-            >
-              SITE
-            </button>
+            <div>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/gyuhyeon6201/netflix",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                GITHUB
+              </button>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://gyuhyeon6201.github.io/netflix/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                SITE
+              </button>
+            </div>
           </div>
         </div>
         {/* 모멘텀 */}
@@ -48,27 +61,37 @@ const CloneCoding = () => {
           />
           <div className="clone-btn">
             <button
-              onClick={() =>
-                window.open(
-                  "https://github.com/gyuhyeon6201/myday",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
+              className="clone-overview-btn"
+              onClick={() => navigate("/myday")}
             >
-              GITHUB
+              OVERVIEW
             </button>
-            <button
-              onClick={() =>
-                window.open(
-                  "https://gyuhyeon6201.github.io/myday/",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-            >
-              SITE
-            </button>
+            <div>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/gyuhyeon6201/myday",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                GITHUB
+              </button>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://gyuhyeon6201.github.io/myday/",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                SITE
+              </button>
+            </div>
           </div>
         </div>
         {/* 에어비앤비 */}
@@ -82,27 +105,37 @@ const CloneCoding = () => {
           />
           <div className="clone-btn">
             <button
-              onClick={() =>
-                window.open(
-                  "https://github.com/gyuhyeon6201/project.github.io/tree/main/0430_airbnb_clone",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
+              className="clone-overview-btn"
+              onClick={() => navigate("/airbnb")}
             >
-              GITHUB
+              OVERVIEW
             </button>
-            <button
-              onClick={() =>
-                window.open(
-                  "https://gyuhyeon6201.github.io/project.github.io/0430_airbnb_clone/index.html",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-            >
-              SITE
-            </button>
+            <div>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/gyuhyeon6201/project.github.io/tree/main/0430_airbnb_clone",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                GITHUB
+              </button>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://gyuhyeon6201.github.io/project.github.io/0430_airbnb_clone/index.html",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                SITE
+              </button>
+            </div>
           </div>
         </div>
         {/* 테슬라 */}
@@ -116,27 +149,37 @@ const CloneCoding = () => {
           />
           <div className="clone-btn">
             <button
-              onClick={() =>
-                window.open(
-                  "https://github.com/gyuhyeon6201/project.github.io/tree/main/0417-18_tesla",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
+              className="clone-overview-btn"
+              onClick={() => navigate("/tesla")}
             >
-              GITHUB
+              OVERVIEW
             </button>
-            <button
-              onClick={() =>
-                window.open(
-                  "https://gyuhyeon6201.github.io/project.github.io/0417-18_tesla/index.html",
-                  "_blank",
-                  "noopener,noreferrer"
-                )
-              }
-            >
-              SITE
-            </button>
+            <div>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/gyuhyeon6201/project.github.io/tree/main/0417-18_tesla",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                GITHUB
+              </button>
+              <button
+                className="clone-link-btn"
+                onClick={() =>
+                  window.open(
+                    "https://gyuhyeon6201.github.io/project.github.io/0417-18_tesla/index.html",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+              >
+                SITE
+              </button>
+            </div>
           </div>
         </div>
       </div>

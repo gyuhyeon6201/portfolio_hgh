@@ -1,16 +1,17 @@
-
+import { useNavigate } from "react-router-dom";
 
 const Greenvia = () => {
+  const navigate = useNavigate();
   return (
     <div className="details">
       <h1 className="title">Greenvia</h1>
-      <p className="sub-title">블로그형 웹페이지</p>
+      <h3 className="sub-title">블로그형 웹페이지</h3>
       <div>
         <img
           src={`${process.env.PUBLIC_URL}/images/main_project/greenvia.png`}
         />
         <div className="link-btn">
-          <button onClick={()=>window.open("", "_blank", "noopener,noreferrer")}>OVERVIEW</button>
+          <button onClick={() => navigate("/greenvia-overview")}>OVERVIEW</button>
           <button onClick={()=>window.open("https://github.com/gyuhyeon6201/project.github.io/tree/main/0530_blog_Greenvia", "_blank", "noopener,noreferrer")}>GITHUB </button>
           <button onClick={()=>window.open("https://gyuhyeon6201.github.io/project.github.io/0530_blog_Greenvia/index.html", "_blank", "noopener,noreferrer")}>SITE </button>
         </div>

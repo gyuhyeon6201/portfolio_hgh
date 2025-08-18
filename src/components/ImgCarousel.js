@@ -1,6 +1,6 @@
 const ImgCarousel = () => {
   return (
-    <div className="publishing-wrap">
+    <div className="img-carousel">
       <div className="publishing-top-wrap">
         <div className="publishing-top">
           <h2>04</h2>

@@ -20,7 +20,13 @@ const Menu = ({ menuOpen, closeMenu }) => {
 
   return (
     <nav className={`side-menu ${menuOpen ? "menuOpen" : ""}`}>
-      <IoCloseCircle className="menu-close-icon" onClick={closeMenu} />
+      <IoCloseCircle
+        className="menu-close-icon"
+        onClick={() => {
+          setOpenIdx(null);
+          closeMenu();
+        }}
+      />
       <div>
         <ul>
           {menuData.map((menuItem, idx) => {
@@ -29,7 +35,13 @@ const Menu = ({ menuOpen, closeMenu }) => {
               <li key={idx} className="menu-title">
                 <div
                   onClick={() => {
-                    menuItem.subMenu && toggleSubMenu(menuItem.id);
+                    if (menuItem.subMenu) {
+                      toggleSubMenu(menuItem.id);
+                    } else if (menuItem.id === 3) {
+                      navigate("/publishing");
+                      setOpenIdx(null);
+                      closeMenu();
+                    }
                   }}
                 >
                   <span>{menuItem.title}</span>
@@ -45,6 +57,7 @@ const Menu = ({ menuOpen, closeMenu }) => {
                           className="sub-menu"
                           onClick={() => {
                             navigate(sub.path);
+                            setOpenIdx(null);
                             closeMenu();
                           }}
                         >
