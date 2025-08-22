@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./app.scss";
 import Header from "./components/Header";
 import MainPage from "./components/MainPage";
@@ -20,29 +20,46 @@ import Publishing from "./components/Publishing";
 
 const App = () => {
   return (
-    <div id="app">
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<MainPage />}></Route>
-          <Route path="/puppyparty" element={<PuppyParty />}></Route>
-          <Route path="/towerpick" element={<TowerPick />}></Route>
-          <Route path="/wordgame" element={<WordGame />}></Route>
-          <Route path="/greenvia" element={<Greenvia />}></Route>
-          <Route path="/figmaplan" element={<FigmaPlan />}></Route>
-          <Route path="/puppyparty-overview" element={<PuppyPartyOverview />}></Route>
-          <Route path="/towerpick-overview" element={<TowerPickOverview />}></Route>
-          <Route path="/wordgame-overview" element={<WordGameOverview />}></Route>
-          <Route path="/greenvia-overview" element={<GreenviaOverview />}></Route>
-          <Route path="/figmaplan-overview" element={<FigmaPlanOverview />}></Route>
-          <Route path="/netflix" element={<Netflix />}></Route>
-          <Route path="/myday" element={<MyDay />}></Route>
-          <Route path="/airbnb" element={<Airbnb />}></Route>
-          <Route path="/tesla" element={<Tesla />}></Route>
-          <Route path="/publishing" element={<Publishing />}></Route>
-        </Routes>
-      </main>
-    </div>
+    <HashRouter>
+      <div id="app">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<MainPage />}></Route>
+            <Route path="/puppyparty" element={<PuppyParty />}></Route>
+            <Route path="/towerpick" element={<TowerPick />}></Route>
+            <Route path="/wordgame" element={<WordGame />}></Route>
+            <Route path="/greenvia" element={<Greenvia />}></Route>
+            <Route path="/figmaplan" element={<FigmaPlan />}></Route>
+            <Route
+              path="/puppyparty-overview"
+              element={<PuppyPartyOverview />}
+            ></Route>
+            <Route
+              path="/towerpick-overview"
+              element={<TowerPickOverview />}
+            ></Route>
+            <Route
+              path="/wordgame-overview"
+              element={<WordGameOverview />}
+            ></Route>
+            <Route
+              path="/greenvia-overview"
+              element={<GreenviaOverview />}
+            ></Route>
+            <Route
+              path="/figmaplan-overview"
+              element={<FigmaPlanOverview />}
+            ></Route>
+            <Route path="/netflix" element={<Netflix />}></Route>
+            <Route path="/myday" element={<MyDay />}></Route>
+            <Route path="/airbnb" element={<Airbnb />}></Route>
+            <Route path="/tesla" element={<Tesla />}></Route>
+            <Route path="/publishing" element={<Publishing />}></Route>
+          </Routes>
+        </main>
+      </div>
+    </HashRouter>
   );
 };
 
