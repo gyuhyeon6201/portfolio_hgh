@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio_hgh/static/css/main.9b1d86dc.css",
-    "main.js": "/portfolio_hgh/static/js/main.f42151a8.js",
+    "main.js": "/portfolio_hgh/static/js/main.6e3277ba.js",
     "index.html": "/portfolio_hgh/index.html",
     "main.9b1d86dc.css.map": "/portfolio_hgh/static/css/main.9b1d86dc.css.map",
-    "main.f42151a8.js.map": "/portfolio_hgh/static/js/main.f42151a8.js.map"
+    "main.6e3277ba.js.map": "/portfolio_hgh/static/js/main.6e3277ba.js.map"
   },
   "entrypoints": [
     "static/css/main.9b1d86dc.css",
-    "static/js/main.f42151a8.js"
+    "static/js/main.6e3277ba.js"
   ]
 }
